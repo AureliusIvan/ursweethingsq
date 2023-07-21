@@ -77,7 +77,7 @@
     .testimoni__section {
         width:100%;
         height:fit-content;
-        padding:0px;
+        padding-bottom:100px;
         background-image: url(@/data/testimoni/testi_bg.webp);
         background-color: $bg-color;
         background-position-y: 135px;
