@@ -5,6 +5,8 @@
 <template>
   <div>
     <h1>This is main Page!</h1>
+    <Keunggulan />
     <Product />
+    <Lokasi />
   </div>
 </template>
