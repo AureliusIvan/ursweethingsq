@@ -19,7 +19,7 @@ import testi18 from "@/data/testimoni/testi18.webp";
 
 export const Testimoni = [
     {
-        id:1,
+        id:1,//
         img :testi1
     },
     {
