@@ -21,6 +21,7 @@
     "@nuxtjs/eslint-module": "^4.1.0",
     "@vueuse/core": "^10.2.1",
     "googleapis": "^120.0.0",
+    "nuxt-swiper": "^1.2.0",
     "sass": "^1.63.6"
   }
 }
