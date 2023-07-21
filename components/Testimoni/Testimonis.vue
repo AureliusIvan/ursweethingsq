@@ -9,6 +9,7 @@
     
     let slidesPerView=ref(process.client ? (window.innerWidth <= 500 ? 1 : 6) : 6);
     // let imgSrc=ref(process.client ? (window.innerWidth <= 500 ?  '@/data/testimoni/testi_bg.webp' : '@/data/testimoni/testi_bg.webp') : '@/data/testimoni/testi_bg.webp');
+    //
     onMounted(()=>{
         watchEffect(() => {
 
