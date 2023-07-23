@@ -128,15 +128,14 @@ const ProductData = computed(() => {
     #list {
         display: grid;
         grid-template-columns: auto auto auto;
-        gap: 2rem;
-        padding: 2rem;
-        padding-inline: 7%;
+        gap: 1.5rem;
+        padding-inline: 11%;
 
         @media screen and (max-width: 1200px) {
             grid-template-columns: auto auto;
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 650px) {
             grid-template-columns: auto;
         }
     }

@@ -1,7 +1,6 @@
 <!-- ivan - 14 Juli 2023 -->
 <script setup lang="ts">
 import Placeholder from '@/data/images/placeholder.png';
-import { stat } from 'fs';
 
 const props = defineProps({
     image: {
@@ -51,7 +50,8 @@ const toogleModal = () => {
         <div id="Content">
             <div id="text">
                 <h1 :class="!status ? 'opacity-50' : ''">{{ title ? title : "Coming Soon" }}</h1>
-                <p :class="!status ? 'opacity-50' : ''">{{ desc ? desc : "Jangan khawatir, menu-menu lezat lainnya sedang dalam proses pembuatan" }}</p>
+                <p :class="!status ? 'opacity-50' : ''">
+                    {{ desc ? desc : "Jangan khawatir, menu-menu lezat lainnya sedang dalam proses pembuatan" }}</p>
             </div>
             <button :disabled="!status" id="modal_btn" @click="toogleModal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -94,32 +94,23 @@ const toogleModal = () => {
 <style lang="scss" scoped>
 #Card {
     width: 100%;
-
     background-color: #f5f5f5;
-    border-radius: 1rem;
+    border-radius: 3rem;
     background-color: rgba(250, 250, 250, 1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
 
 
     #Card_image {
-        width: 100%;
-        height: 300px;
         overflow: hidden;
-
-        @media screen and (max-width: 768px) {
-            height: 200px;
-        }
 
         #Main_image {
             width: 100%;
             height: 300px;
             transition: all 0.3s ease-in-out;
             object-fit: cover;
-
 
             &:hover {
                 transform: scale(1.2);
@@ -137,8 +128,7 @@ const toogleModal = () => {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 5%;
-
+        padding: 1.5rem;
 
         #text {
             display: flex;
