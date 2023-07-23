@@ -1,10 +1,10 @@
-<!-- Arvin 7/18/2023 8:31pm -->
+<!-- Arvin 7/18/2023 8:31pm  -->
 <template>
     <div class="bg-background">
         <div class="w-100 flex flex-col justify-center bg-background items-center mxt">
             <!-- headline -->
             <div class="flex flex-col justify-between md:flex-row">
-                <div class="text1">
+                <div  class="text1">
                         <p>
                             Why choose us
                         </p>

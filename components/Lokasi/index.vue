@@ -1,6 +1,6 @@
 <!-- Arvin 7/19/2023 -->
 <template>
-    <!-- title -->
+    <!-- title  -->
   <div class=" bg-background gmap">
     <h2 class="title">Lokasi kami</h2>
     <!-- <div id="google-map" class="h-96 rounded-lg shadow-md border border-black-5 marg"></div> -->
@@ -8,8 +8,7 @@
         <div class="h-96 shadow-md marg">
             <iframe
             :src="mapSrc"
-            style="border:0;"
-            allowfullscreen=""
+            style ="border:0;" 
             ></iframe>
         </div>
     </div>
@@ -65,9 +64,9 @@ export default {
 </script> -->
 
 <style>
-    .title{
+    .title{ 
         display: flex;
-        justify-content: right;
+        justify-content: right; 
         color: #191D23;
         font-family: Carter One;
         font-size: 4rem;
