@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <h1>This is main Page!</h1>
+    <Hero />
     <Keunggulan />
     <Product />
     <Lokasi />
