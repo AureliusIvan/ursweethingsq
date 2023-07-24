@@ -4,7 +4,6 @@
         <slot />
         <Testimoni/>
         <Gallery/>
-        <Lokasi />
         <Footer />
     </div>
 </template>
