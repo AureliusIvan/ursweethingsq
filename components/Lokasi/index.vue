@@ -1,16 +1,13 @@
 <!-- Arvin 7/19/2023 -->
 <template>
-    <!-- title  -->
+  <!-- title  -->
   <div class=" bg-background gmap">
     <h2 class="title">Lokasi kami</h2>
     <!-- <div id="google-map" class="h-96 rounded-lg shadow-md border border-black-5 marg"></div> -->
     <div class="mapouter">
-        <div class="h-96 shadow-md marg">
-            <iframe
-            :src="mapSrc"
-            style ="border:0;" 
-            ></iframe>
-        </div>
+      <div class="h-96 shadow-md marg">
+        <iframe :src="mapSrc" style="border:0;"></iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -63,54 +60,56 @@ export default {
 };
 </script> -->
 
-<style>
-    .title{ 
-        display: flex;
-        justify-content: right; 
-        color: #191D23;
-        font-family: Carter One;
-        font-size: 4rem;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 1.44px;
-        text-transform: capitalize;
-        padding-right: 150px;
-        padding-bottom: 30px;
+<style scoped>
+.title {
+  display: flex;
+  justify-content: right;
+  color: #191D23;
+  font-family: Carter One;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+  padding-right: 150px;
+  padding-bottom: 30px;
 
-        @media screen and (max-width: 800px) {
-                font-size: 2rem;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                padding-right: 0px;
-                padding-bottom: 30px;
-            }
-    }
-    
-    .marg{
-        margin-left:7vw ;
-        margin-right:7vw ;
+  @media screen and (max-width: 800px) {
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+}
 
-    }
-    .marg iframe{
-        width: 100%;
-        height: 100%;
-    }
-    .gmap{
-        padding-bottom: 5vh;
-    }
+.marg {
+  margin-left: 7vw;
+  margin-right: 7vw;
 
-    .mapouter {
-        position: relative;
-        text-align: right;
-        height: 100%;
-        width: 100%;
-    }
+}
 
-    .gmap_canvas {
-        overflow: hidden;
-        background: none !important;
-        height: 100%;
-        width: 100%;
-    }
+.marg iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.gmap {
+  padding-bottom: 5vh;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
 </style>
