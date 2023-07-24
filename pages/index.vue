@@ -3,5 +3,10 @@
 </script>
 
 <template>
-  <Product />
+  <div>
+    <Hero />
+    <Keunggulan />
+    <Product />
+    <Lokasi />
+  </div>
 </template>
