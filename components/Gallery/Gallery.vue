@@ -10,10 +10,10 @@
             </div>
             <div class="md:col-end-7"></div>
             <div class="md:col-span-6 md:grid md:grid-cols-6 md:mt-16">
-                <div class="md:col-span-1 hidden sm:block md:absolute md:w-96 md:mt-[-72px]">
+                <div class="md:col-span-1 hidden sm:block md:absolute md:w-96 md:mt-[-72px] z-[-1]">
                     <img src="~/assets/assets/images/photoGalleryAsset/blobPinkLeft.png" alt="blobPinkLeft" />
                 </div>
-                <div class="galleryImage md:col-start-2 md:col-span-4 md:grid md:grid-cols-4 md:gap-2 md:z-10 ">
+                <div class="galleryImage md:col-start-2 md:col-span-4 md:grid md:grid-cols-4 md:gap-2 md:z-2 ">
                     <div class="md:col-span-1">
                         <img src="~/assets/assets/images/photoGalleryAsset/gallery1.png" alt="gallery1" />
                     </div>
@@ -27,7 +27,7 @@
                         <img src="~/assets/assets/images/photoGalleryAsset/gallery4.png" alt="gallery4" />
                     </div>
                 </div>
-                <div class="md:col-span-1 hidden sm:block md:absolute md:right-0 md:w-96 md:mt-[-72px]">
+                <div class="md:col-span-1 hidden sm:block md:absolute md:right-0 md:w-96 md:mt-[-72px] z-[-1]">
                     <img src="~/assets/assets/images/photoGalleryAsset/blobPinkRight.png" alt="blobPinkRight" />
                 </div>
             </div>
@@ -65,6 +65,7 @@ h2 {
 @media (max-width: 640px) {
     .galleryImage {
         padding: 10%;
+        max-height: 30;
     }   
 
     h1 {
