@@ -44,7 +44,7 @@ const toogleModal = () => {
 
 <template>
     <div id="Card">
-        <div id="Card_image">
+        <div id="Card_image" v-motion-slide-visible-bottom>
             <img id="Main_image" :src="image" alt="">
         </div>
         <div id="Content">

@@ -20,6 +20,7 @@
   "dependencies": {
     "@nuxtjs/eslint-module": "^4.1.0",
     "@vueuse/core": "^10.2.1",
+    "@vueuse/motion": "^2.0.0",
     "googleapis": "^120.0.0",
     "saa": "^1.0.0",
     "sas": "^3.0.4",

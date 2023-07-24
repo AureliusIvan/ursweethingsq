@@ -10,11 +10,13 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
         <div id="bg">
             <!-- <img class="bg-main" :src="bgImage" alt="hero-bg" border="0"> -->
             <div id="bg-main"></div>
-            <img class="bg-item left" :src="bgleft" alt="">
-            <img class="bg-item right" :src="bgright" alt="">
+            <div id="bg-item-container">
+                <img class="bg-item left" :src="bgleft" alt="">
+                <img class="bg-item right" :src="bgright" alt="">
+            </div>
         </div>
         <div id="content">
-            <h1 id="main-title">
+            <h1 id="main-title" v-motion-slide-visible-bottom>
                 <span id="row_1">Your favorite</span>
                 <span id="row_2"><span class="sweets">sweets</span> made</span>
                 <span id="row_3">
@@ -22,9 +24,9 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
             </h1>
             <div id="creator">
                 <span id="creator_instagram">@ursweetingsq</span>
-                <span class="creator_name ">Ursweetingsq</span>
+                <span class="creator_name ">by qinthara</span>
             </div>
-            <p id="desc">
+            <p id="desc" v-motion-slide-visible-bottom>
                 Nikmati makanan manis kami yang akan menggugah selera dan meningkatkan moodmu sepanjang hari! Temukan
                 kelezatan ini sekarang dengan cara <b>PRE-ORDER</b> lewat DM Instagram!
             </p>
@@ -39,13 +41,13 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
                     </button>
                 </a>
                 <a href="http://" target="_blank">
-                    <button class="cta_btn">Order Sekarang
+                    <a href="https://www.instagram.com/ursweethingsq/" target="_blank" class="cta_btn">Order Sekarang
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
                             <path
                                 d="M18.3 5.79998L9.3 0.599978C8.4 -2.15173e-05 7.2 0.699978 7.2 1.79998V4.19998C7.2 4.99998 6.6 5.59998 5.8 5.59998H1.4C0.6 5.59998 0 6.19998 0 6.99998C0 7.79998 0.6 8.39998 1.4 8.39998H5.8C6.6 8.39998 7.2 8.99998 7.2 9.79998V12.2C7.2 13.3 8.4 14 9.3 13.4L18.3 8.19998C19.3 7.69998 19.3 6.29998 18.3 5.79998Z"
                                 fill="#FAFAFA" />
                         </svg>
-                    </button>
+                    </a>
                 </a>
             </div>
         </div>
@@ -93,51 +95,69 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
             }
         }
 
-        .bg-item {
-            position: absolute;
-            object-fit: cover;
 
+        #bg-item-container {
+            position: relative;
+            height: 50%;
+            animation: float 1.2s infinite alternate ease-in-out;
 
-            &.left {
-                top: 0;
-                left: 0;
-                height: 25rem;
-                width: fit-content;
-                overflow: visible;
-                transform: translateY(50%) translateX(-20%) scale(0.8);
-
-                @media screen and (max-width: 1000px) {
-                    transform: translateY(50%) translateX(-20%) scale(0.8);
+            @keyframes float {
+                0% {
+                    transform: translateY(0%);
                 }
 
-                @media screen and (max-width: 800px) {
-                    transform: translateY(80%) translateX(-30%) scale(0.5);
-                }
-
-                @media screen and (max-width: 500px) {
-                    transform: translateY(80%) translateX(-50%) scale(0.3);
+                100% {
+                    transform: translateY(20px);
                 }
             }
 
-            &.right {
-                top: 0%;
-                right: 0%;
-                height: 25rem;
-                transform: translateY(50%) translateX(20%) scale(0.8);
+            .bg-item {
+                position: absolute;
+                object-fit: cover;
 
-                @media screen and (max-width: 1000px) {
+
+                &.left {
+                    top: 0;
+                    left: 0;
+                    height: 25rem;
+                    width: fit-content;
+                    overflow: visible;
+                    transform: translateY(50%) translateX(-20%) scale(0.8);
+
+                    @media screen and (max-width: 1000px) {
+                        transform: translateY(50%) translateX(-20%) scale(0.8);
+                    }
+
+                    @media screen and (max-width: 800px) {
+                        transform: translateY(80%) translateX(-30%) scale(0.5);
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        transform: translateY(80%) translateX(-50%) scale(0.3);
+                    }
+                }
+
+                &.right {
+                    top: 0%;
+                    right: 0%;
+                    height: 25rem;
                     transform: translateY(50%) translateX(20%) scale(0.8);
-                }
 
-                @media screen and (max-width: 800px) {
-                    transform: translateY(80%) translateX(30%) scale(0.5);
-                }
+                    @media screen and (max-width: 1000px) {
+                        transform: translateY(50%) translateX(20%) scale(0.8);
+                    }
 
-                @media screen and (max-width: 400px) {
-                    transform: translateY(80%) translateX(40%) scale(0.3);
+                    @media screen and (max-width: 800px) {
+                        transform: translateY(80%) translateX(30%) scale(0.5);
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        transform: translateY(80%) translateX(40%) scale(0.3);
+                    }
                 }
             }
         }
+
     }
 
     #content {
@@ -163,7 +183,7 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
 
 
             @media screen and (max-width: 1100px) {
@@ -235,14 +255,14 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
             text-align: center;
             font-feature-settings: 'clig' off, 'liga' off;
             font-family: 'Ubuntu';
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-style: normal;
             font-weight: 500;
             line-height: 150%;
             /* 2.25rem */
             letter-spacing: 0.045rem;
             width: 50rem;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
 
             @media screen and (max-width: 800px) {
@@ -278,6 +298,10 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
         gap: 0.625rem;
         height: 2rem;
         margin-bottom: 40px;
+
+        @media screen and (max-width: 800px) {
+            transform: scale(0.5);
+        }
 
         #creator_instagram {
             border-radius: 0.9375rem;
@@ -320,6 +344,7 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
             align-items: center;
             justify-content: center;
             gap: 0.625rem;
+            width: max-content;
 
             @media screen and (max-width: 800px) {
                 padding: 0.6rem 1rem;
@@ -332,6 +357,7 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
             }
 
             &.left {
+                width: 100%;
                 border-radius: 2.5rem;
                 background: #67002B;
             }
