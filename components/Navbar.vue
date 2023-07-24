@@ -30,11 +30,23 @@
             </div>
         </div>
     </nav>
+    <div id="nav_gap">
+
+    </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+#nav_gap {
+    height: 120px;
+}
+
 nav {
-    background-color: #FBBBC2
+    background-color: #FBBBC2;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
 }
 
 #container {
