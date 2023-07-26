@@ -123,13 +123,13 @@ import { slides } from 'googleapis/build/src/apis/slides';
     $testimoni-icon-mobileHeight: 123.5px;
 
     .testimoni__section {
-        width:100%;
+        // width:100%;
         height:fit-content;
         padding-bottom:100px;
         // background-image: url(@/data/testimoni/testi_bg.webp);
         background-color: $bg-color;
-        background-position-y: 135px;
-        background-size:100% 1400px;
+        background-position-y: 145px;
+        background-size:100% 100%;
         // flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 100px;
