@@ -22,6 +22,7 @@
     "@vueuse/core": "^10.2.1",
     "@vueuse/motion": "^2.0.0",
     "googleapis": "^120.0.0",
+    "nuxt-swiper": "^1.2.0",
     "saa": "^1.0.0",
     "sas": "^3.0.4",
     "sass": "^1.63.6"
