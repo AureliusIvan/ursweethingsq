@@ -10,25 +10,45 @@
             </div>
             <div class="md:col-end-7"></div>
             <div class="md:col-span-6 md:grid md:grid-cols-6 md:mt-16">
-                <div class="md:col-span-1 hidden sm:block md:absolute md:w-96 md:mt-[-72px] z-1">
+                <div class="blobPinkLeft md:col-span-1 hidden sm:block md:absolute md:w-108 md:mt-[-72px] z-1">
                     <img src="~/assets/assets/images/photoGalleryAsset/blobPinkLeft.png" alt="blobPinkLeft" />
                 </div>
-                <div class="galleryImage md:col-start-2 md:col-span-4 md:grid md:grid-cols-4 md:gap-2 z-10 ">
-                    <div class="md:col-span-1">
-                        <img src="~/assets/assets/images/photoGalleryAsset/gallery1.png" alt="gallery1" />
-                    </div>
-                    <div class="md:col-span-1">
-                        <img src="~/assets/assets/images/photoGalleryAsset/gallery2.png" alt="gallery2" />
-                    </div>
-                    <div class="md:col-span-1">
-                        <img src="~/assets/assets/images/photoGalleryAsset/gallery3.png" alt="gallery3" />
-                    </div>
-                    <div class="md:col-span-1">
-                        <img src="~/assets/assets/images/photoGalleryAsset/gallery4.png" alt="gallery4" />
+                <div class="galleryImage md:col-start-2 col-span-4 z-10">
+                    <div class="wrapper">
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery1.png" alt="gallery1" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery2.png" alt="gallery2" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery3.png" alt="gallery3" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery4.png" alt="gallery4" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery5.png" alt="gallery5" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery6.png" alt="gallery6" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery7.png" alt="gallery7" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery8.png" alt="gallery8" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery9.png" alt="gallery9" />
+                        </div>
+                        <div class="item">
+                            <img src="~/assets/assets/images/photoGalleryAsset/gallery10.png" alt="gallery10" />
+                        </div>
                     </div>
                 </div>
-                <div class="md:col-span-1 hidden sm:block md:absolute md:right-0 md:w-96 md:mt-[-72px] z-1">
-                    <img src="~/assets/assets/images/photoGalleryAsset/blobPinkRight.png" alt="blobPinkRight" />
+                <div class="blobPinkRight md:col-span-1 hidden sm:block md:absolute md:right-0 md:w-96 md:mt-[-72px] z-1">
+                    <img src="~/assets/assets/images/photoGalleryAsset/blobPinkRight.png" alt="blobPinkRight"/>
                 </div>
             </div>
         </div>
@@ -36,9 +56,27 @@
 </template>
 
 <style scoped>
-.galleryImage img {
-    max-height: 300px;
-    width: 120%;
+
+.blobPinkRight {
+    width: 33rem;
+}
+.wrapper {
+    max-height: 800px;
+    width: 110%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0;
+}
+.wrapper .item {
+    min-width: 350px;
+    height: 520px;
+    line-height: 400px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 10px;
 }
 
 h1 {
@@ -63,6 +101,22 @@ h2 {
 
 
 @media (max-width: 640px) {
+
+    .wrapper {
+        max-height: 300px;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .wrapper .item {
+        min-width: 200px;
+        height: 300px;
+        line-height: 400px;
+        text-align: center;
+        background-color: #ddd;
+        margin-right: 10px;
+    }
     .galleryImage {
         padding: 10%;
         max-height: 30;
