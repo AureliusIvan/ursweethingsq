@@ -7,7 +7,5 @@
     <Hero />
     <Keunggulan />
     <Product />
-    <Testimoni />
-    <Lokasi />
   </div>
 </template>

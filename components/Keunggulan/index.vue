@@ -1,7 +1,7 @@
 <!-- Arvin 7/18/2023 8:31pm  -->
 <template>
-  <div class="bg-background" v-motion-slide-visible-bottom>
-    <div class="w-100 flex flex-col justify-center bg-background items-center mxt">
+  <div class="" v-motion-slide-visible-bottom>
+    <div class="w-100 flex flex-col justify-center items-center mxt">
       <!-- headline -->
       <div class="flex flex-col justify-between md:flex-row">
         <div class="text1">

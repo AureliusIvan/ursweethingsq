@@ -45,7 +45,7 @@ const ProductData = computed(() => {
 #Product {
     width: 100%;
     height: max-content;
-    background-color: #f5f5f5;
+    // background-color: #f5f5f5;
     position: relative;
     padding-block: 5rem;
     overflow: hidden;

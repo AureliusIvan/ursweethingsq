@@ -1,7 +1,7 @@
 <!-- Arvin 7/19/2023 -->
 <template>
   <!-- title  -->
-  <div class=" bg-background gmap">
+  <div class="gmap">
     <h2 class="title">Lokasi kami</h2>
     <!-- <div id="google-map" class="h-96 rounded-lg shadow-md border border-black-5 marg"></div> -->
     <div class="mapouter">
@@ -25,43 +25,9 @@ export default {
 };
 </script>
 
-
-<!-- <script>
-export default {
-  name: "GoogleMap",
-  mounted() {
-    const apiKey = "#"; // api key
-
-    const googleMapsScript = document.createElement("script");
-    googleMapsScript.setAttribute(
-      "src",
-      `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`
-    );
-    document.head.appendChild(googleMapsScript);
-    window.initMap = this.initMap;
-  },
-  methods: {
-    initMap() {
-      const location = { lat: 33.9868, lng: -118.4733 };
-
-      const map = new google.maps.Map(document.getElementById("google-map"), {
-        center: location,
-        zoom: 15,
-        mapTypeId: "roadmap",
-      });
-
-      // Add a marker at the specified location
-      new google.maps.Marker({
-        position: location,
-        map,
-      });
-    },
-  },
-};
-</script> -->
-
 <style scoped>
 .title {
+  position: relative;
   display: flex;
   justify-content: right;
   color: #191D23;
@@ -85,18 +51,23 @@ export default {
 }
 
 .marg {
-  margin-left: 7vw;
-  margin-right: 7vw;
+  margin-left: 16vw;
+  margin-right: 10vw;
 
 }
 
 .marg iframe {
-  width: 100%;
   height: 100%;
+  width: 100%;
+
+  
 }
 
 .gmap {
   padding-bottom: 5vh;
+  position: relative;
+  width: 100%;
+  
 }
 
 .mapouter {
@@ -107,7 +78,6 @@ export default {
 }
 
 .gmap_canvas {
-  overflow: hidden;
   background: none !important;
   height: 100%;
   width: 100%;

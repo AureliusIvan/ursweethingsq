@@ -3,7 +3,7 @@
     import { computed, ref, watchEffect } from 'vue';
     import bg_desktop from '@/data/testimoni/testi_bg.webp';
     import bg_mobile from '@/data/testimoni/testi_bg_mobile.webp';
-import { slides } from 'googleapis/build/src/apis/slides';
+    import { slides } from 'googleapis/build/src/apis/slides';
     const TestiData = computed(() => {
         return Testimoni
     });
@@ -127,7 +127,6 @@ import { slides } from 'googleapis/build/src/apis/slides';
         height:fit-content;
         padding-bottom:100px;
         // background-image: url(@/data/testimoni/testi_bg.webp);
-        background-color: $bg-color;
         background-position-y: 145px;
         background-size:100% 100%;
         // flex-wrap: wrap;

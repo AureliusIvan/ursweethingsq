@@ -13,7 +13,7 @@
                 <div class="blobPinkLeft md:col-span-1 hidden sm:block md:absolute md:w-108 md:mt-[-72px] z-1">
                     <img src="~/assets/assets/images/photoGalleryAsset/blobPinkLeft.png" alt="blobPinkLeft" />
                 </div>
-                <div class="galleryImage md:col-start-2 col-span-4 z-10">
+                <div class="galleryImage md:col-start-2 col-span-4">
                     <div class="wrapper">
                         <div class="item">
                             <img src="~/assets/assets/images/photoGalleryAsset/gallery1.png" alt="gallery1" />
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="blobPinkRight md:col-span-1 hidden sm:block md:absolute md:right-0 md:w-96 md:mt-[-72px] z-1">
+                <div class="blobPinkRight md:col-span-1 hidden sm:block md:absolute md:right-0 md:w-96 md:mt-[-72px]">
                     <img src="~/assets/assets/images/photoGalleryAsset/blobPinkRight.png" alt="blobPinkRight"/>
                 </div>
             </div>
@@ -56,9 +56,12 @@
 </template>
 
 <style scoped>
-
+.galleryImage{
+    z-index: 0;
+}
 .blobPinkRight {
-    width: 33rem;
+    width: 28rem;
+    z-index: -1;
 }
 .wrapper {
     max-height: 800px;
