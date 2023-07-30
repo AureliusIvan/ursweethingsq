@@ -1,3 +1,4 @@
+<!-- aldrik - 26 juli 2023 -->
 <script setup lang="ts">
     import  {Testimoni}  from '@/data/testiData';
     import { computed, ref, watchEffect } from 'vue';
