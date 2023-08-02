@@ -44,7 +44,7 @@ const toogleModal = () => {
 
 <template>
     <div id="Card">
-        <div id="Card_image" v-motion-slide-visible-bottom>
+        <div id="Card_image">
             <img id="Main_image" :src="image" alt="">
         </div>
         <div id="Content">
@@ -54,7 +54,7 @@ const toogleModal = () => {
                     {{ desc ? desc : "Jangan khawatir, menu-menu lezat lainnya sedang dalam proses pembuatan" }}</p>
             </div>
             <button :disabled="!status" id="modal_btn" @click="toogleModal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="inherit" height="inherit" viewBox="0 0 32 32" fill="none">
                     <path
                         d="M15.0625 15.0625L15.1274 15.0308C15.3304 14.9294 15.5583 14.8883 15.784 14.9123C16.0096 14.9364 16.2237 15.0246 16.4008 15.1665C16.5779 15.3085 16.7106 15.4982 16.7832 15.7132C16.8558 15.9283 16.8653 16.1596 16.8105 16.3798L15.6895 20.8702C15.6343 21.0905 15.6435 21.3221 15.7159 21.5374C15.7884 21.7527 15.921 21.9427 16.0982 22.0848C16.2754 22.227 16.4896 22.3154 16.7155 22.3395C16.9414 22.3636 17.1694 22.3224 17.3726 22.2208L17.4375 22.1875M30.5 16.25C30.5 18.1213 30.1314 19.9743 29.4153 21.7032C28.6992 23.4321 27.6495 25.003 26.3263 26.3263C25.003 27.6495 23.4321 28.6992 21.7032 29.4153C19.9743 30.1314 18.1213 30.5 16.25 30.5C14.3787 30.5 12.5257 30.1314 10.7968 29.4153C9.06787 28.6992 7.49696 27.6495 6.17373 26.3263C4.85049 25.003 3.80085 23.4321 3.08472 21.7032C2.36859 19.9743 2 18.1213 2 16.25C2 12.4707 3.50133 8.84612 6.17373 6.17373C8.84612 3.50134 12.4707 2 16.25 2C20.0293 2 23.6539 3.50134 26.3263 6.17373C28.9987 8.84612 30.5 12.4707 30.5 16.25ZM16.25 10.3125H16.2627V10.3252H16.25V10.3125Z"
                         stroke="#B0E9EA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -94,14 +94,14 @@ const toogleModal = () => {
 <style lang="scss" scoped>
 #Card {
     width: 100%;
+    max-width: 300px;
     background-color: #f5f5f5;
-    border-radius: 3rem;
+    border-radius: 1rem;
     background-color: rgba(250, 250, 250, 1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     position: relative;
-
 
     #Card_image {
         overflow: hidden;
@@ -130,6 +130,11 @@ const toogleModal = () => {
         align-items: flex-start;
         padding: 1.5rem;
 
+
+        @media screen and (max-width: 768px) {
+            padding: 0.75rem;
+        }
+
         #text {
             display: flex;
             flex-direction: column;
@@ -138,11 +143,15 @@ const toogleModal = () => {
             h1 {
                 color: #191D23;
                 font-family: Ubuntu;
-                font-size: 1.75rem;
+                font-size: 1.55rem;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 1.96756rem;
                 /* 112.431% */
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
             }
 
             p {
@@ -167,6 +176,7 @@ const toogleModal = () => {
         #modal_btn {
             margin-block: 10px;
             transition: filter 0.2s ease-in-out;
+            height: 2.5rem;
 
             &:hover {
                 cursor: pointer;
@@ -177,6 +187,11 @@ const toogleModal = () => {
                 filter: contrast(0.5);
                 opacity: 0.3;
                 cursor: not-allowed;
+            }
+
+            @media screen and (max-width: 768px) {
+                height: 1.5rem;
+                margin-block: 5px;
             }
         }
 
@@ -244,6 +259,11 @@ const toogleModal = () => {
                     line-height: 1.53713rem;
                     /* 122.972% */
                     letter-spacing: 0.0625rem;
+
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 1rem;
+                    }
                 }
 
                 #size {
@@ -254,6 +274,10 @@ const toogleModal = () => {
                     font-weight: 400;
                     line-height: 1.53713rem;
                     letter-spacing: 0.04375rem;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 0.8rem;
+                    }
                 }
             }
 
@@ -262,16 +286,16 @@ const toogleModal = () => {
                 display: flex;
                 width: fit-content;
                 height: 3.125rem;
-                padding: 0.92231rem 1.84456rem;
+                padding: 0.92231rem 1.04456rem;
                 justify-content: center;
                 align-items: center;
-                gap: 0.92231rem;
+
                 flex-shrink: 0;
                 border-radius: 2.45944rem;
                 background: #F78495;
                 color: #FAFAFA;
                 font-family: Ubuntu;
-                font-size: 1.22969rem;
+                font-size: 1rem;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
@@ -282,8 +306,10 @@ const toogleModal = () => {
                 }
 
                 @media screen and (max-width: 768px) {
-                    padding: 0.2em 1rem;
-                    font-size: 1rem;
+                    height: fit-content;
+                    padding: 0.8rem 1.6rem;
+                    font-size: 0.7rem;
+                    width: max-content;
                 }
 
 

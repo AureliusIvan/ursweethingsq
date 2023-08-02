@@ -132,13 +132,21 @@ const ProductData = computed(() => {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 1.5rem;
-        padding-inline: 11%;
+        padding-inline: 15rem;
 
         @media screen and (max-width: 1200px) {
+            padding-inline: 5rem;
             grid-template-columns: auto auto;
         }
 
         @media screen and (max-width: 650px) {
+            padding-inline: 1rem;
+            grid-template-columns: auto;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 450px) {
+            padding-inline: 10%;
             grid-template-columns: auto;
         }
     }
