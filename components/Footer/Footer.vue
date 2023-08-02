@@ -8,15 +8,19 @@
                     <div id="logo" class="mb-3">
                         <img src="https://i.ibb.co/n7fHyCg/logo.webp" alt="Mochi Bites Daifuku">
                     </div>
-                    <div class="mb-3">    
+                    <div class="mb-3">
                         <h1>Thank you For <br> visiting us</h1>
                     </div>
                     <div class="flex flex-wrap">
                         <div>
-                            <img src="https://i.ibb.co/tsg8yff/Instagram-jpeg-0.png" href="#">
+                            <a href="https://www.instagram.com/ursweethingsq/" target="_blank">
+                                <img src="https://i.ibb.co/tsg8yff/Instagram-jpeg-0.png" href="#">
+                            </a>
                         </div>
                         <div class="ml-2">
-                            <img src="https://i.ibb.co/0B4fKfj/Whats-App-png-0.png" href="#">
+                            <a href="https://wa.me/6289654033739" target="_blank">
+                                <img src="https://i.ibb.co/0B4fKfj/Whats-App-png-0.png" href="#">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -60,65 +64,65 @@
 </template>
 
 <style scoped>
-    footer {
-        background-color: #FBBBC2;
-        padding-left: 10%;
-        padding-right: 10%;
+footer {
+    background-color: #FBBBC2;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer div {
+    color: #191D23;
+}
+
+#container h1 {
+    font-family: Carter One;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#container h2 {
+    font-size: 1.2rem;
+}
+
+#container span {
+    text-align: end;
+    font-size: 0.8rem;
+}
+
+#copyright span {
+    font-size: 0.8rem;
+}
+
+#contactLogo img {
+    background-color: #67002B;
+    padding: 7px;
+    width: 30px;
+}
+
+@media (max-width: 540px) {
+    #container {
+        flex-direction: column;
     }
 
-    footer div {
-        color: #191D23;
-    }
-
-    #container h1 {
-        font-family: Carter One;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    #container h2 {
-        font-size: 1.2rem;
-    }
-
-    #container span {
-        text-align: end;
-        font-size: 0.8rem;
+    #copyright {
+        margin-top: 3rem;
     }
 
     #copyright span {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
-    #contactLogo img {
-            background-color: #67002B;
-            padding: 7px;
-            width: 30px;
-        }
-
-    @media (max-width: 540px) {
-        #container {
-            flex-direction: column;   
-        }
-
-        #copyright {
-            margin-top: 3rem;
-        }
-
-        #copyright span {
-            font-size: 0.7rem;
-        }
-
-        footer div {
-            align-items: center;
-        }
-
-        footer h1 {
-            text-align: center;
-        }
-
-        #contact {
-            align-items: end;
-        }
+    footer div {
+        align-items: center;
     }
+
+    footer h1 {
+        text-align: center;
+    }
+
+    #contact {
+        align-items: end;
+    }
+}
 </style>

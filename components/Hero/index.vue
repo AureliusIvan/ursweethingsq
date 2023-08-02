@@ -16,7 +16,7 @@ import mochiLove from "@/assets/assets/images/mochi-love.svg";
             </div>
         </div>
         <div id="content">
-            <h1 id="main-title" v-motion-slide-visible-bottom>
+            <h1 id="main-title">
                 <span id="row_1">Your favorite</span>
                 <span id="row_2"><span class="sweets">sweets</span> made</span>
                 <span id="row_3">

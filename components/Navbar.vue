@@ -21,7 +21,7 @@
                     <li class="nav-item">
                         <div id="sosmedButton" class="ml-2 bg-white rounded-full">
                             <a class="px-3 py-2 flex items-center text-xs font-bold leading-snug text-black"
-                                href="https://www.instagram.com/ursweethingsq/" target="_blank">
+                                href="  " target="_blank">
                                 <img src="https://i.ibb.co/c818SDG/ig.png"><span class="ml-2">Order by IG</span>
                             </a>
                         </div>
