@@ -1,5 +1,5 @@
 // ivan | 14 Juli 2023
-import Bites from '@/data/images/bites.png';
+import Bites from '@/data/images/bites.webp';
 import Ichigo from '@/data/images/ichigo.png';
 import Crepes from '@/data/images/crepes.png';
 import Strawberry from '@/data/images/strawberry.png';
