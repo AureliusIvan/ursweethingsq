@@ -10,12 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    colors: {
-      pinky: "#F78495",
-      background: "#f5f5f5",
-      t1 : "#191D23",
-      t2 : "#75797F",
-    },
   },
   plugins: [],
 };

@@ -22,7 +22,8 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     }
   },
-  modules: ['@vueuse/motion/nuxt'],
+  modules: ['@vueuse/motion/nuxt','nuxt-swiper'],
+  swiper: {},
   // nuxt.config.js
   runtimeConfig: {
     public: {

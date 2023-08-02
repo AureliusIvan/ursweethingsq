@@ -4,7 +4,7 @@
     <nav class="relative flex flex-wrap items-center justify-between">
         <div id="container" class="container mx-auto flex flex-wrap items-center justify-between">
             <div id="logo" class="relative flex">
-                <a class="text font-bold leading-relaxed inline-block py-2 whitespace-nowrap uppercase text-white" href="#">
+                <a class="text font-bold leading-relaxed inline-block py-2 whitespace-nowrap uppercase text-white" href="https://www.instagram.com/ursweethingsq/" target="_blank">
                     <img src="https://i.ibb.co/n7fHyCg/logo.webp" alt="Mochi Bites Daifuku">
                 </a>
             </div>
@@ -12,7 +12,7 @@
                 <ul id="sosmedLogo" class="flex flex-row list-none ml-auto">
                     <li class="nav-item">
                         <div id="sosmedButton" class="bg-white rounded-full">
-                            <a class="px-3 py-2 flex items-center text-xs font-bold leading-snug text-black" href="#"
+                            <a class="px-3 py-2 flex items-center text-xs font-bold leading-snug text-black" href="https://wa.me/6289654033739"
                                 target="_blank">
                                 <img src="https://i.ibb.co/wpkY18r/wa.webp"><span class="ml-2">Order by WA</span>
                             </a>

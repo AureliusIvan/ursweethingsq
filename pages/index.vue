@@ -7,6 +7,5 @@
     <Hero />
     <Keunggulan />
     <Product />
-    <Lokasi />
   </div>
 </template>
