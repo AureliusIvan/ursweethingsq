@@ -1,6 +1,6 @@
 <!-- Arvin 7/18/2023 8:31pm  -->
 <template>
-  <div class="bg-background" v-motion-slide-visible-bottom>
+  <div class="bg-background"  >
     <div class="w-100 flex flex-col justify-center bg-background items-center mxt">
       <!-- headline -->
       <div class="flex flex-col justify-between md:flex-row">
@@ -193,4 +193,5 @@
   @media screen and (max-width: 1080px) {
     width: 80%;
   }
-}</style>
+}
+</style>
