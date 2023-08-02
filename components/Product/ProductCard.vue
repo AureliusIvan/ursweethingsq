@@ -94,7 +94,7 @@ const toogleModal = () => {
 <style lang="scss" scoped>
 #Card {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     background-color: #f5f5f5;
     border-radius: 1rem;
     background-color: rgba(250, 250, 250, 1);
@@ -102,6 +102,11 @@ const toogleModal = () => {
     display: flex;
     flex-direction: column;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+        width: fit-content;
+        max-width: 300px !important;
+    }
 
     #Card_image {
         overflow: hidden;
@@ -227,7 +232,6 @@ const toogleModal = () => {
                 font-style: normal;
                 font-weight: 400;
                 line-height: 1.96756rem;
-                /* 131.17% */
             }
 
             p {
