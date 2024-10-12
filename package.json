@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@vueuse/core": "^10.2.1",
+    "@vueuse/core": "^11.0.0",
     "@vueuse/motion": "^2.0.0",
     "flickity": "^3.0.0",
     "googleapis": "^120.0.0",
