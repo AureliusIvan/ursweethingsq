@@ -29,7 +29,7 @@
     "sas": "^3.0.4",
     "sass": "^1.63.6",
     "slick-carousel": "^1.8.1",
-    "swiper": "^10.0.4",
+    "swiper": "^11.0.0",
     "vue-slick-carousel": "^1.0.6",
     "vue-slick-ts": "^1.1.0"
   }
